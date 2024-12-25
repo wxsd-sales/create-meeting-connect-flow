@@ -4,4 +4,4 @@ Token. Service app?
 Move message to the called flow
 
 New Service App (Meeting Scheduler)
-  scope: meeting:schedules_write
+  scope: it has to be meeting:admin_schedule_write'. meeting:schedules_write not enough, report doc mistake
