@@ -2,9 +2,6 @@
 
 Doc taking into account how vars are used, example title in the parent flow, welcome message in the called flow. Welcome message better in the parent flow?
 
-Use meeting link!
-
-
 
 New Service App (Meeting Scheduler)
 
