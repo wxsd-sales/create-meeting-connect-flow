@@ -19,6 +19,6 @@ try with longer message
 
 refresh token and publish for the server app -> create 2 repros
 
-
+discalimer, license, support: https://github.com/wxsd-sales/meeting-manager?tab=readme-ov-file
 
 
