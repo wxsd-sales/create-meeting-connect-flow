@@ -5,7 +5,7 @@ This is a flow designed to schedule a Webex Meeting that could be used to provid
 ## Table of Contents
 
 ## Overview
-The flow will create two **meetings links**:
+The Webex Connect flow will create two **meetings links**:
 
 - One for the expert (host link)
 - One for the customer (guest link)
@@ -15,7 +15,7 @@ The expert can join from the Webex App, or from a video device. A regular Webex 
 The customer will join from a web browser, using the guest link provided, and from any device (Windows OS, MAC OS, iOS, Android) as long as an updated version of the browser (Chrome, Safari, Firefox, Edge) is used.
 
 
-The flow is designed to be used as child flow. Go to the [Setup section](#setup) below for more details
+This flow is designed to be used as child flow. Go to the [Setup section](#parent-flow-setup) below for more details
 
 ## Prerequisites
 
@@ -65,16 +65,29 @@ The flow is designed to be used as child flow. Go to the [Setup section](#setup)
 
 2. Create a new flow by importing the downloaded flow, with the option **Upload a flow**
 
-
     ![Upload a Flow](import-flow.jpg)
 
 3. Edit the **Custom Variables**. For the variable `MeetingSchedulerServiceAppToken`, use the your Service App Access Token
 
-3. This flow is designed to be used as child flow. The parent flow calling this flow hos
-
-
   > NOTE: The Service App access token needs to be refreshed. If you want to use this flow in production, a Webex Connect Custom Integration Node with oAuth configured should be used. You can still use this flow for demo purposed, updating the access token manually
 
+## Parent Flow Setup
+
+The provided Webex Connect flow is designed to be used as child flow. The parent flow calling this flow needs to provide values for the following variables:
+
+- `start`: Meeting start date and time
+- `end`: Meeting end date and time
+- `welcomeMessage`: A short welcome text message that will be shown to the customer. If none is provided, _"Hi there! This is the Video Support Widget. Please wait for the host to start the meeting"_ will be used as default.
+- `expertEmail`: Expert email address. It needs to be a Webex user in your ORG with a Webex Meetings host license
+
+`start` and `end` dates need to be Java Script Date objects, converted to strings. For example, if you want to the meeting to start in 15 minutes, you need to setup an Eval node with the following code:
+
+```
+var now = new Date();
+var in15minutes = new Date(now.getTime() + 15 * 60000);
+start = in15minutes.toString();
+
+````
 
 ## License
 
@@ -92,23 +105,12 @@ Please contact the Webex SD team at [wxsd@external.cisco.com](mailto:wxsd@extern
 
 ## Pending, remove
 
-Doc taking into account how vars are used, example title in the parent flow, welcome message in the called flow. Welcome message better in the parent flow?
-
-
-New Service App (Meeting Scheduler)
-
-  scope: it has to be meeting:admin_schedule_write'. meeting:schedules_write not enough, report doc mistake
-
-
-add notes to eval nodes, and or notes section, about dates in js, formats...
-
-
 
 try with longer message
 
-
-refresh token and publish for the server app -> create 2 repros
-  once published, update the url var and publish flow again
+publish the final server app, update url in the flow, update the flow file here.
+Add the refresh token to the flow
+new wxsd github repo for the server app
 
 
 
