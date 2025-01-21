@@ -69,7 +69,7 @@ This flow is designed to be used as child flow. Go to the [Setup section](#paren
 
 3. Edit the **Custom Variables**. For the variable `MeetingSchedulerServiceAppToken`, use the your Service App Access Token
 
-  > NOTE: The Service App access token needs to be refreshed. If you want to use this flow in production, a Webex Connect Custom Integration Node with oAuth configured should be used. You can still use this flow for demo purposed, updating the access token manually
+  > NOTE: The Service App access token needs to be refreshed. If you want to use this flow in production, a Webex Connect Custom Integration Node with oAuth configured should be created. You can still use this flow for demo purposes, updating the access token manually
 
 ## Parent Flow Setup
 
