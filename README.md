@@ -89,7 +89,7 @@ The provided Webex Connect flow is designed to be used as child flow. In other w
 - `title`: Webex Meeting title
 - `start`: Webex Meeting start date and time
 - `end`: Webex Meeting end date and time
-- `welcomeMessage`: A short welcome text message that will be shown to the customer. If none is provided, _"Hi there! This is the Video Support Widget. Please wait for the host to start the meeting"_ will be used as default.
+- `welcomeMessage`: A short welcome text message that will be shown to the customer. If none is provided, ```"Hi there! Welcome to our video support page. Please wait for the host to start the meeting"``` will be used as default.
 - `expertEmail`: Expert email address. It needs to be a Webex user in your ORG with a Webex Meetings host license
 
 `start` and `end` dates need to be Java Script Date objects, converted to strings. For example, if you want the meeting to start in 2 minutes, and to finish in 30m, you need to setup an Eval node with the following code:
