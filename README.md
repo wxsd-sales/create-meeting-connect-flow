@@ -50,14 +50,13 @@ This flow is designed to be used as child flow. Go to the [Setup section](#paren
 
 6. Save your **Client ID** and **Client Secret** somewhere safe
 
-
-  Do not close this window, you will need to come back here later
+  Do not close this window, you will need to come back here later.
 
 ### Authorize your new Service App
 
 1. Log in [Control Hub](https://admin.webex.com)  as a Webex administrator in your Webex ORG
 
-2. Go to Apps, and click on **Service Apps**. Your new Service App should be listed
+2. Go to Apps, and click a **Service Apps**. Your new Service App should be listed
 
 3. Click on the Service App, and enable it by clicking on the **Authorize** toggle switch. If you have more than one webex site in your org, choose in what site you want to authorize the Service App
 
@@ -67,7 +66,7 @@ This flow is designed to be used as child flow. Go to the [Setup section](#paren
 
 1. Go back to Service App creation web page, and refresh it.
 
-2. Under **Authorized orgs**, choose your Webex ORG,  paste your Service App Client Secret, and click on **Generate Tokens**. Store the `access_token` somewhere safe
+2. Under **Authorized orgs**, choose your Webex ORG, paste your Service App Client Secret, and click on **Generate Tokens**. Store the `access_token` somewhere safe
 
 ### Create the Webex Connect flow
 
@@ -121,6 +120,8 @@ When the expert joins  the communication setup is completed:
 ![meeting](meeting.jpg)
 
 The web server uses [Rajitha Kantheti](https://github.com/rajithaBK)'s [embeddable Meeting Widget](https://github.com/wxsd-sales/embeddable-meetings-widget/edit/main/README.md) project.
+
+If you want to customize the user experience, please follow the instructions to deploy your own version of the web server in [this repository](https://github.com/wxsd-sales/video-customer-support).
 
 
 ## License
