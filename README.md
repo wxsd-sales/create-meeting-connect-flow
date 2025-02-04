@@ -8,6 +8,7 @@ This is a flow designed to schedule a Webex Meeting that could be used to provid
 - [Prerequisites](#prerequisites)
 - [Setup](#setup)
 - [User Experience](#user-experience)
+- [Example](#example)
 - [License](#license)
 - [Disclaimer](#disclaimer)
 - [Contact](#contact)
@@ -125,6 +126,10 @@ When the expert joins  the communication setup is completed:
 The web server uses [Rajitha Kantheti](https://github.com/rajithaBK)'s [embeddable Meeting Widget](https://github.com/wxsd-sales/embeddable-meetings-widget/edit/main/README.md) project.
 
 If you want to customize the user experience, please follow the instructions to deploy your own version of the web server in [this repository](https://github.com/wxsd-sales/video-customer-support).
+
+## Example
+
+In this [Vidcast video](https://app.vidcast.io/share/6b86454c-4dad-4f37-a9a6-207d80c9b503) you can see an example of the type of services that cab be built, in this case for a Healthcare use case.
 
 
 ## License
