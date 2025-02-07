@@ -83,10 +83,7 @@ This flow is designed to be used as child flow. Go to the [Setup section](#paren
 
   > NOTE: The Service App access token needs to be refreshed. If you want to use this flow in production, a Webex Connect Custom Integration Node with oAuth configured should be created. You can still use this flow for demo purposes, updating the access token manually
 
-5. Open the '**Schedule a Meeting**' node, go to **Body** and choose a value for ``timzone`` from this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List).
-
-
-6. Publish the Flow
+5. Publish the Flow
 
 ### Parent Flow Setup
 
